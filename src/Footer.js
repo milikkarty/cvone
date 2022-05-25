@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTelegram, faLinkedin, faGithub, faYoutube, faGoogle } from "@fortawesome/free-brands-svg-icons";
+
 const Footer = () => {
   return (
     <section>
@@ -5,23 +8,23 @@ const Footer = () => {
         <div className="wrapper">
             <a href="https://t.me/capturedamericanspy" className="icon telegram" target="_blank" rel="noreferrer">
                 <span className="tooltip">Telegram</span>
-                <span><i className="fab fa-telegram"></i></span>
+                <span><FontAwesomeIcon icon={faTelegram} /></span>
             </a>
             <a href="https://www.linkedin.com/in/klymenko/" className="icon linkedin" target="_blank" rel="noreferrer">
                 <span className="tooltip">LinkedIn</span>
-                <span><i className="fab fa-linkedin-in"></i></span>
+                <span><FontAwesomeIcon icon={faLinkedin} /></span>
             </a>
             <a href="https://github.com/milikkarty" className="icon github" target="_blank" rel="noreferrer">
                 <span className="tooltip">Github</span>
-                <span><i className="fab fa-github-square"></i></span>
+                <span><FontAwesomeIcon icon={faGithub} /></span>
             </a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" className="icon youtube" target="_blank" rel="noreferrer">
                 <span className="tooltip">Youtube</span>
-                <span><i className="fab fa-youtube"></i></span>
+                <span><FontAwesomeIcon icon={faYoutube} /></span>
             </a>
             <div className="icon email" id="copyEmail">
                 <span className="tooltip">Email</span>
-                <span><i className="fas fa-envelope"></i></span>
+                <span><FontAwesomeIcon icon={faGoogle} /></span>
             </div>
         </div>
     </section>
