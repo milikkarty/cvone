@@ -1,6 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTelegram, faLinkedin, faGithub, faYoutube, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
+const handleMailClick = () => {
+    window.prompt('Ctrl+C to copy to the clipboard:', 'milikkarty@gmail.com');
+};
+
 const Footer = () => {
   return (
     <section>
@@ -22,7 +26,7 @@ const Footer = () => {
                 <span className="tooltip">Youtube</span>
                 <span><FontAwesomeIcon icon={faYoutube} /></span>
             </a>
-            <div className="icon email" id="copyEmail">
+            <div className="icon email" id="copyEmail" onClick={handleMailClick}>
                 <span className="tooltip">Email</span>
                 <span><FontAwesomeIcon icon={faGoogle} /></span>
             </div>
