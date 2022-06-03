@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cvone/static/css/main.e8148076.css",
-    "main.js": "/cvone/static/js/main.004c0025.js",
+    "main.js": "/cvone/static/js/main.f6c76512.js",
     "static/media/Mykyta.png": "/cvone/static/media/Mykyta.d4d4a61015f0fe3a9fa6.png",
     "index.html": "/cvone/index.html",
     "main.e8148076.css.map": "/cvone/static/css/main.e8148076.css.map",
-    "main.004c0025.js.map": "/cvone/static/js/main.004c0025.js.map"
+    "main.f6c76512.js.map": "/cvone/static/js/main.f6c76512.js.map"
   },
   "entrypoints": [
     "static/css/main.e8148076.css",
-    "static/js/main.004c0025.js"
+    "static/js/main.f6c76512.js"
   ]
 }
