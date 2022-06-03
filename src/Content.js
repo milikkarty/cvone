@@ -19,6 +19,7 @@ const Projects = () => {
         <div className="project-container">
             <a href="https://milikkarty.github.io/todolist/" className="project-item" target="_blank" rel="noreferrer">To-do list</a>
             <a href="https://morning-earth-58287.herokuapp.com/" className="project-item" target="_blank" rel="noreferrer">Blog</a>
+            <a href="https://milikkarty.github.io/colorpicker/" className="project-item" target="_blank" rel="noreferrer">Color picker</a>
             <a href="https://milikkarty.github.io/temp-calculator/" className="project-item" target="_blank" rel="noreferrer">Temperature calculator</a>
             <a href="https://milikkarty.github.io/length-calculator/" className="project-item" target="_blank" rel="noreferrer">Length calculator</a>
             <a href="https://milikkarty.github.io/snake/" className="project-item" target="_blank" rel="noreferrer">Snake</a>
