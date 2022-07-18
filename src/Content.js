@@ -1,32 +1,48 @@
 const Content = () => {
-  return (
-    <main>
-        <hr />
-        <Projects />
-        <hr />
-        <Skills />
-        <hr />
-        <Academic />
-        <hr />
-    </main>
-  )
+    return (
+        <main>
+            <hr />
+            <Projects />
+            <hr />
+            <Skills />
+            <hr />
+            <Academic />
+            <hr />
+        </main>
+    )
 }
 
 const Projects = () => {
-  return (
-    <section>
-        <h1>My projects</h1>
-        <div className="project-container">
-            <a href="https://milikkarty.github.io/todolist/" className="project-item" target="_blank" rel="noreferrer">To-do list</a>
-            <a href="https://morning-earth-58287.herokuapp.com/" className="project-item" target="_blank" rel="noreferrer">Blog</a>
-            <a href="https://milikkarty.github.io/colorpicker/" className="project-item" target="_blank" rel="noreferrer">Color picker</a>
-            <a href="https://milikkarty.github.io/temp-calculator/" className="project-item" target="_blank" rel="noreferrer">Temperature calculator</a>
-            <a href="https://milikkarty.github.io/length-calculator/" className="project-item" target="_blank" rel="noreferrer">Length calculator</a>
-            <a href="https://milikkarty.github.io/snake/" className="project-item" target="_blank" rel="noreferrer">Snake</a>
-            <a href="https://milikkarty.github.io/hangman/" className="project-item" target="_blank" rel="noreferrer">Hangman</a>
-        </div>
-    </section>
-  )
+
+    const projects = [
+        {
+            href: "https://milikkarty.github.io/passingthoughts",
+            text: "Passing thoughts"
+        },
+        {
+            href: "https://morning-earth-58287.herokuapp.com/",
+            text: "Blog"
+        },
+        {
+            href: "https://milikkarty.github.io/lightbulb/",
+            text: "Lightbulb"
+        },
+        {
+            href: "https://milikkarty.github.io/snake/",
+            text: "Snake"
+        }
+    ];
+
+    return (
+        <section>
+            <h1>My projects</h1>
+            <div className="project-container">
+                { projects.map(project => (
+                    <a href={project.href} className="project-item" target="_blank" rel="noreferrer">{project.text}</a>
+                )) }
+            </div>
+        </section>
+    )
 }
 
 const Skills = () => {
@@ -36,11 +52,11 @@ const Skills = () => {
             <div id="skills">
                 <article className="skill-row">
                     <h2>Web-development</h2>
-                    <p>I have finished a bunch of courses on HTML, CSS (plus Bootstrap), JS (plus jQuery), NodeJS (plus Express), databases (MongoDB and SQL), and Git. I also know how to work with Git and Github.</p>
+                    <p>I have finished a bunch of courses on HTML, CSS, JS, and React. I also know how to work with Git and Github and how to start a server with NodeJS and Express.</p>
                 </article>
                 <article className="skill-row">
                     <h2>Technical communication</h2>
-                    <p>I took a course in technical communication by SoftServe where I got to know what SDLC, DDLC, Agile, Scrum, and Kanban are, and how to write user documentation.</p>
+                    <p>I participated in the Technical Communication Fundamentals course by SoftServe where I got to know what SDLC, DDLC, Agile, Scrum, and Kanban are, and how to write user documentation.</p>
                 </article>
                 <article className="skill-row">
                     <h2>Translation</h2>
