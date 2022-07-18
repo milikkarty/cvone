@@ -50,22 +50,32 @@ const Projects = () => {
 }
 
 const Skills = () => {
+
+    const skills = [
+        {
+            title: "Web-development",
+            text: "I have finished a bunch of courses on HTML, CSS, JS, and React. I also know how to work with Git and Github and how to start a server with NodeJS and Express."
+        },
+        {
+            title: "Technical communication",
+            text: "I participated in the Technical Communication Fundamentals course by SoftServe where I got to know what SDLC, DDLC, Agile, Scrum, and Kanban are, and how to write user documentation."
+        },
+        {
+            title: "Translation",
+            text: "I have a Bachelor's degree in German-Ukrainian and English-Ukrainian translation. Hence I have a four-year non-commercial experience in written translation from these languages."
+        }
+    ]
+
     return (
         <section>
             <h1>My skills</h1>
             <div id="skills">
-                <article className="skill-row">
-                    <h2>Web-development</h2>
-                    <p>I have finished a bunch of courses on HTML, CSS, JS, and React. I also know how to work with Git and Github and how to start a server with NodeJS and Express.</p>
-                </article>
-                <article className="skill-row">
-                    <h2>Technical communication</h2>
-                    <p>I participated in the Technical Communication Fundamentals course by SoftServe where I got to know what SDLC, DDLC, Agile, Scrum, and Kanban are, and how to write user documentation.</p>
-                </article>
-                <article className="skill-row">
-                    <h2>Translation</h2>
-                    <p>I have a Bachelor's degree in German-Ukrainian and English-Ukrainian translation. Hence I have a four-year non-commercial experience in written translation from these languages.</p>
-                </article>
+                { skills.map(skill => (
+                    <article className="skill-row">
+                        <h2>{skill.title}</h2>
+                        <p>{skill.text}</p>
+                    </article>
+                ))}
             </div>
         </section>
     )
