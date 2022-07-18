@@ -82,19 +82,30 @@ const Skills = () => {
 }
 
 const Academic = () => {
+
+    const academics = [
+        {
+            degree: "Master's degree",
+            university: "Taras Shevchenko National University of Kyiv, Institute of Philology (2021-2023)",
+            specialty: "— Foreign literature and the English language: theory and methodology of teaching"
+        },
+        {
+            degree: "Bachelor's degree",
+            university: "Taras Shevchenko National University of Kyiv, Institute of Philology (2017-2021)",
+            specialty: "— German-Ukrainian and English-Ukrainian translation"
+        }
+    ]
+
     return (
         <section>
             <h1>Academic history</h1>
-            <article className="academic-row">
-                <h2>Master's degree</h2>
-                <p>Taras Shevchenko National University of Kyiv, Institute of Philology (2021-2023)</p>
-                <p>— Foreign literature and the English language: Theory and methodology of teaching</p>
-            </article>
-            <article className="academic-row">
-                <h2>Bachelor's degree</h2>
-                <p>Taras Shevchenko National University of Kyiv, Institute of Philology (2017-2021)</p>
-                <p>— German-Ukrainian and English-Ukrainian translation</p>
-            </article>
+            { academics.map(academic => (
+                <article className="academic-row">
+                    <h2>{academic.degree}</h2>
+                    <p>{academic.university}</p>
+                    <p>{academic.specialty}</p>
+                </article>
+            ))}
         </section>
     )
 }
