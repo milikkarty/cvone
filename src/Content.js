@@ -16,18 +16,22 @@ const Projects = () => {
 
     const projects = [
         {
+            id: 1,
             href: "https://milikkarty.github.io/passingthoughts",
             text: "Passing thoughts"
         },
         {
+            id: 2,
             href: "https://morning-earth-58287.herokuapp.com/",
             text: "Blog"
         },
         {
+            id: 3,
             href: "https://milikkarty.github.io/lightbulb/",
             text: "Lightbulb"
         },
         {
+            id: 4,
             href: "https://milikkarty.github.io/snake/",
             text: "Snake"
         }
@@ -38,7 +42,7 @@ const Projects = () => {
             <h1>My projects</h1>
             <div className="project-container">
                 { projects.map(project => (
-                    <a href={project.href} className="project-item" target="_blank" rel="noreferrer">{project.text}</a>
+                    <a href={project.href} className="project-item" target="_blank" rel="noreferrer" key={project.id}>{project.text}</a>
                 )) }
             </div>
         </section>
